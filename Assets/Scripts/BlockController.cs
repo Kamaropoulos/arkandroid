@@ -10,8 +10,7 @@ public class BlockController : MonoBehaviour {
     public Dictionary<string, Sprite> spritesDictionary = new Dictionary<string, Sprite>();
 
     public int lives = 1;
-
-    // Use this for initialization
+    
     void Start() {
         UpdateSpritesDictionary();
     }
