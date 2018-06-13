@@ -1,16 +1,9 @@
-15 10
-0 0 1,blue 0 0 0 0 1,blue 0 0
-0 0 1,blue 0 0 0 0 1,blue 0 0
-0 0 0 1,blue 0 0 1,blue 0 0 0
-0 0 0 1,blue 0 0 1,blue 0 0 0
-0 0 1,blue 1,blue 1,blue 1,blue 1,blue 1,blue 0 0
-0 0 1,blue 1,blue 1,blue 1,blue 1,blue 1,blue 0 0
-0 1,blue 1,blue 1,red 1,blue 1,blue 1,red 1,blue 1,blue 0
-0 1,blue 1,blue 1,red 1,blue 1,blue 1,red 1,blue 1,blue 0
-1,blue 1,blue 1,blue 1,blue 1,blue 1,blue 1,blue 1,blue 1,blue 1,blue
-1,blue 1,blue 1,blue 1,blue 1,blue 1,blue 1,blue 1,blue 1,blue 1,blue
-1,blue 1,blue 1,blue 1,blue 1,blue 1,blue 1,blue 1,blue 1,blue 1,blue
-1,blue 0 1,blue 1,blue 1,blue 1,blue 1,blue 1,blue 0 1,blue
-1,blue 0 1,blue 0 0 0 0 1,blue 0 1,blue
-1,blue 0 1,blue 0 0 0 0 1,blue 0 1,blue
-0 0 0 1,blue 0 0 1,blue 0 0 0
+8 13
+0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0
+1,silver 1,silver 1,silver 1,silver 1,silver 1,silver 1,silver 1,silver 1,silver 1,silver 1,silver 1,silver 1,silver
+1,red 1,red 1,red 1,red 1,red 1,red 1,red 1,red 1,red 1,red 1,red 1,red 1,red
+1,yellow 1,yellow 1,yellow 1,yellow 1,yellow 1,yellow 1,yellow 1,yellow 1,yellow 1,yellow 1,yellow 1,yellow 1,yellow
+1,blue 1,blue 1,blue 1,blue 1,blue 1,blue 1,blue 1,blue 1,blue 1,blue 1,blue 1,blue 1,blue
+1,pink 1,pink 1,pink 1,pink 1,pink 1,pink 1,pink 1,pink 1,pink 1,pink 1,pink 1,pink 1,pink 
+1,green 1,green 1,green 1,green 1,green 1,green 1,green 1,green 1,green 1,green 1,green 1,green 1,green

@@ -1,0 +1,17 @@
+16 13
+0 0 0 0 0 0 0 0 0 0 0 0 0
+1,green 1,green 1,green 1,green 1,green 1,green 1,green 1,green 1,green 1,green 1,green 1,green 1,green
+0 0 0 0 0 0 0 0 0 0 0 0 0
+1,white 1,white 1,white 9,gold 9,gold 9,gold 9,gold 9,gold 9,gold 9,gold 9,gold 9,gold 9,gold
+0 0 0 0 0 0 0 0 0 0 0 0 0
+1,red 1,red 1,red 1,red 1,red 1,red 1,red 1,red 1,red 1,red 1,red 1,red 1,red
+0 0 0 0 0 0 0 0 0 0 0 0 0
+9,gold 9,gold 9,gold 9,gold 9,gold 9,gold 9,gold 9,gold 9,gold 9,gold 9,gold 1,white 1,white 1,white
+0 0 0 0 0 0 0 0 0 0 0 0 0
+1,pink 1,pink 1,pink 1,pink 1,pink 1,pink 1,pink 1,pink 1,pink 1,pink 1,pink 1,pink 1,pink
+0 0 0 0 0 0 0 0 0 0 0 0 0
+1,blue 1,blue 1,blue 90,gold 9,gold 9,gold 9,gold 9,gold 9,gold 9,gold 9,gold 9,gold 9,gold
+0 0 0 0 0 0 0 0 0 0 0 0 0
+1,aqua 1,aqua 1,aqua 1,aqua 1,aqua 1,aqua 1,aqua 1,aqua 1,aqua 1,aqua 1,aqua 1,aqua 1,aqua
+0 0 0 0 0 0 0 0 0 0 0 0 0
+9,gold 9,gold 9,gold 9,gold 9,gold 9,gold 9,gold 9,gold 9,gold 9,gold 1,aqua 1,aqua 1,aqua

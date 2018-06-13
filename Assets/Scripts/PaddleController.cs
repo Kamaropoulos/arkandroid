@@ -9,9 +9,12 @@ public class PaddleController : MonoBehaviour {
     public float moveStep = 0.5f;
     private Rigidbody2D rigidbody = null;
 
+    private Vector3 startPosition;
+
 	// Use this for initialization
 	void Start () {
         rigidbody = GetComponent<Rigidbody2D>();
+        startPosition = transform.position;
 	}
 	
 	// Update is called once per frame
@@ -20,4 +23,8 @@ public class PaddleController : MonoBehaviour {
         float x = moveXY * speed * moveStep;
         rigidbody.velocity = new Vector2(x, 0);
 	}
+
+    public void Reset() {
+        transform.position = startPosition;
+    }
 }

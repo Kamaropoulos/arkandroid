@@ -65,6 +65,8 @@ public class GridData {
 public class GridController : MonoBehaviour {
     public GameObject BlockPrefab;
 
+    public float marginTop = 0.8f;
+
     public string level;
 
     private Vector3 GridStartPosition;
@@ -89,11 +91,13 @@ public class GridController : MonoBehaviour {
 
         GridStartPosition = Camera.main.ViewportToWorldPoint(new Vector3(0, 1, 0));
         GridStartPosition.y -= spriteHeight;
+        GridStartPosition.y -= marginTop;
         GridStartPosition.z = 0;
     }
 
-    // Use this for initialization
-    void Start () {
+    public void LoadLevel(string level) {
+        this.level = level;
+
         GridData grid = new GridData(level);
 
         // Calculate margin
@@ -101,7 +105,7 @@ public class GridController : MonoBehaviour {
 
         GridStartPosition.x += margin;
         Vector3 position = GridStartPosition;
-        
+
         for (int i = 0; i < grid.linesCount; i++) {
             for (int j = 0; j < grid.blocksCount; j++) {
                 if (grid.lines[i].blocks[j].lives > 0) {
@@ -112,6 +116,8 @@ public class GridController : MonoBehaviour {
             position.x = GridStartPosition.x;
             position.y -= spriteHeight;
         }
+
+        GridStartPosition.x -= margin;
     }
 
     GameObject SpawnNewBlock(string color, int lives, Vector3 position, Quaternion rotation) {
@@ -123,4 +129,36 @@ public class GridController : MonoBehaviour {
         newBlock.transform.position = new Vector3(position.x + (spriteWidth / 2), position.y + (spriteHeight / 2), position.z);
         return newBlock;
     }
- }
+
+    public void ResetGrid() {
+        // Remove blocks
+        GameObject[] blocks = GameObject.FindGameObjectsWithTag("block");
+        for (int i = 0; i < blocks.Length; i++) {
+            Destroy(blocks[i]);
+        }
+
+        // Reset ball and paddle positions
+        GameObject.Find("BallAndPaddle").transform.Find("paddle").GetComponent<PaddleController>().Reset();
+        try {
+            GameObject.Find("ball").GetComponent<BallController>().Reset();
+        } catch (Exception e) {
+            try {
+                GameObject.Find("BallAndPaddle").transform.Find("paddle").Find("ball").GetComponent<BallController>().Reset();
+            }
+            catch (Exception e1) {
+
+            }
+        }
+    }
+
+    public void RemoveAllButOne() {
+        GameObject[] blocks = GameObject.FindGameObjectsWithTag("block");
+        for (int i = 0; i < blocks.Length-1; i++) {
+            Destroy(blocks[i]);
+        }
+    }
+
+    public int GetBlocksLeft() {
+        return GameObject.FindGameObjectsWithTag("block").Length-1;
+    }
+}

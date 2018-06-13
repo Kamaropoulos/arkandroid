@@ -4,22 +4,30 @@ using UnityEngine;
 
 public class BallController : MonoBehaviour {
 
-    //public GameObject block;
+    public GameObject gameController;
 
     private float force = 200f;
     private Rigidbody2D rigidbody = null;
     private bool started = false;
 
-	// Use this for initialization
-	void Start () {
-        rigidbody = GetComponent<Rigidbody2D>();
+    private GameObject paddle;
+    private Vector3 startPosition;
 
-        //GameObject newBlock = Instantiate(block, transform.position, transform.rotation);
-        //newBlock.GetComponent<BlockController>().Initialize("yellow", 5);
-	}
+    private GameController game;
+
+    // Use this for initialization
+    void Start() {
+        rigidbody = GetComponent<Rigidbody2D>();
+        game = gameController.GetComponent<GameController>();
+        paddle = transform.parent.gameObject;
+        startPosition = transform.position;
+    }
 	
 	// Update is called once per frame
 	void Update () {
+        if (!started) {
+            transform.position = new Vector3(paddle.transform.position.x, transform.position.y, transform.position.z);
+        }
 		if(!started && Input.GetKeyUp(KeyCode.Space)) {
             transform.SetParent(null);
             rigidbody.bodyType = RigidbodyType2D.Dynamic;
@@ -28,4 +36,19 @@ public class BallController : MonoBehaviour {
             started = true;
         }
 	}
+
+    void OnTriggerEnter2D(Collider2D col) {
+        if (col.gameObject.name == "WallBottom") {
+            game.LostLife();
+            paddle.GetComponent<PaddleController>().Reset();
+            Reset();
+        }
+    }
+
+    public void Reset() {
+        started = false;
+        rigidbody.velocity = Vector3.zero;
+        transform.position = startPosition;
+        transform.parent = paddle.transform;
+    }
 }

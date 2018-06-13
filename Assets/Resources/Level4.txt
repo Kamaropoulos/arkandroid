@@ -1,0 +1,17 @@
+16 11
+0 0 1,yellow 0 0 0 0 0 1,yellow 0 0
+0 0 1,yellow 0 0 0 0 0 1,yellow 0 0
+0 0 0 1,yellow 0 0 0 1,yellow 0 0 0
+0 0 0 1,yellow 0 0 0 1,yellow 0 0 0
+0 0 2,silver 2,silver 2,silver 2,silver 2,silver 2,silver 2,silver 0 0
+0 0 2,silver 2,silver 2,silver 2,silver 2,silver 2,silver 2,silver 0 0
+0 2,silver 2,silver 1,red 2,silver 2,silver 2,silver 1,red 2,silver 2,silver 0
+0 2,silver 2,silver 1,red 2,silver 2,silver 2,silver 1,red 2,silver 2,silver 0
+2,silver 2,silver 2,silver 2,silver 2,silver 2,silver 2,silver 2,silver 2,silver 2,silver 2,silver
+2,silver 2,silver 2,silver 2,silver 2,silver 2,silver 2,silver 2,silver 2,silver 2,silver 2,silver
+2,silver 2,silver 2,silver 2,silver 2,silver 2,silver 2,silver 2,silver 2,silver 2,silver 2,silver
+2,silver 0 2,silver 2,silver 2,silver 2,silver 2,silver 2,silver 2,silver 0 2,silver
+2,silver 0 2,silver 0 0 0 0 0 2,silver 0 2,silver
+2,silver 0 2,silver 0 0 0 0 0 2,silver 0 2,silver
+0 0 0 2,silver 2,silver 0 2,silver 2,silver 0 0 0
+0 0 0 2,silver 2,silver 0 2,silver 2,silver 0 0 0
